@@ -619,6 +619,11 @@
                 return;
             }
 
+            // Ensure the profile sections are visible when the user is logged in
+            document.getElementById('notLoggedInContent').style.display = 'none';
+            document.getElementById('profileContent').style.display = 'block';
+            document.getElementById('pageHeader').style.display = 'block';
+
             loadProfileData();
             loadLoginHistory();
             loadOrderHistory();
